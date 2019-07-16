@@ -2,7 +2,8 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
+# Enforce ruby from .ruby-version file
+ruby File.read(File.join(__dir__, ".ruby-version")).split("-", 2).last
 
 gem 'rails', '~> 6.0.0.rc1'
 gem 'pg', '~> 1.1.4'
