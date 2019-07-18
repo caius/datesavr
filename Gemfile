@@ -5,7 +5,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # Enforce ruby from .ruby-version file
 ruby File.read(File.join(__dir__, ".ruby-version")).split("-", 2).last
 
-gem 'rails', '~> 6.0.0.rc1'
+# gem 'rails', '~> 6.0.0.rc1'
+gem "rails", github: "rails/rails", branch: "6-0-stable"
 gem 'pg', '~> 1.1.4'
 gem 'puma', '~> 4'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
