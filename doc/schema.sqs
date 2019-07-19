@@ -14,11 +14,11 @@
         <zorder>0</zorder>
         <SQLField>
             <name><![CDATA[id]]></name>
-            <type><![CDATA[BIGINT]]></type>
+            <type><![CDATA[UUID]]></type>
             <primaryKey>1</primaryKey>
-            <referencesField>potential_event_id</referencesField>
+            <referencesField>event_id</referencesField>
             <referencesTable>EventDate</referencesTable>
-            <referencesField><![CDATA[potential_event_id]]></referencesField>
+            <referencesField><![CDATA[event_id]]></referencesField>
             <referencesTable><![CDATA[EventDate]]></referencesTable>
             <sourceCardinality>1</sourceCardinality>
             <destinationCardinality>5</destinationCardinality>
@@ -60,19 +60,12 @@
         <zorder>1</zorder>
         <SQLField>
             <name><![CDATA[id]]></name>
-            <type><![CDATA[BIGINT]]></type>
+            <type><![CDATA[UUID]]></type>
             <primaryKey>1</primaryKey>
             <autoIncrement><![CDATA[1]]></autoIncrement>
             <forcedUnique><![CDATA[1]]></forcedUnique>
             <notNull><![CDATA[1]]></notNull>
             <uid><![CDATA[A1803333-8B92-49AD-9CA4-F37AC8747402]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[uuid]]></name>
-            <type><![CDATA[UUID]]></type>
-            <notNull><![CDATA[1]]></notNull>
-            <uid><![CDATA[4693694E-21D5-4115-A64A-11DCCFF36FAD]]></uid>
-            <unique><![CDATA[1]]></unique>
         </SQLField>
         <SQLField>
             <name><![CDATA[date]]></name>
@@ -81,8 +74,8 @@
             <uid><![CDATA[02664FBF-45A7-482C-813A-6CAA916D563F]]></uid>
         </SQLField>
         <SQLField>
-            <name><![CDATA[potential_event_id]]></name>
-            <type><![CDATA[BIGINT]]></type>
+            <name><![CDATA[event_id]]></name>
+            <type><![CDATA[UUID]]></type>
             <forcedUnique><![CDATA[1]]></forcedUnique>
             <uid><![CDATA[FB26E1CA-39C7-43D0-8942-DBB9773F23D0]]></uid>
         </SQLField>
@@ -102,13 +95,13 @@
         <zorder>2</zorder>
         <SQLField>
             <name><![CDATA[id]]></name>
-            <type><![CDATA[BIGINT]]></type>
+            <type><![CDATA[UUID]]></type>
             <forcedUnique><![CDATA[1]]></forcedUnique>
             <uid><![CDATA[0B2331D7-0B89-4EB3-9FE8-8F7BFB9D70D1]]></uid>
         </SQLField>
         <SQLField>
-            <name><![CDATA[potential_event_id]]></name>
-            <type><![CDATA[BIGINT]]></type>
+            <name><![CDATA[event_id]]></name>
+            <type><![CDATA[UUID]]></type>
             <referencesField>id</referencesField>
             <referencesTable>Event</referencesTable>
             <referencesField><![CDATA[id]]></referencesField>
@@ -117,6 +110,8 @@
             <destinationCardinality>1</destinationCardinality>
             <referencesFieldUID><![CDATA[0BB118D2-B847-47B2-BE4A-0FB44DA3E146]]></referencesFieldUID>
             <referencesTableUID><![CDATA[43F75549-25C7-4A06-97F0-0559147FD939]]></referencesTableUID>
+            <connectorHidden><![CDATA[0]]></connectorHidden>
+            <connectorLineStyle><![CDATA[0]]></connectorLineStyle>
             <forcedUnique><![CDATA[0]]></forcedUnique>
             <uid><![CDATA[9422E08B-3BA5-4596-AE84-E526B01C1E0B]]></uid>
         </SQLField>
@@ -141,7 +136,7 @@
         </SQLField>
         <SQLField>
             <name><![CDATA[respondent_id]]></name>
-            <type><![CDATA[BIGINT]]></type>
+            <type><![CDATA[UUID]]></type>
             <referencesField>id</referencesField>
             <referencesTable>Respondent</referencesTable>
             <referencesField><![CDATA[id]]></referencesField>
@@ -153,8 +148,8 @@
             <uid><![CDATA[89582990-7BD3-4E45-91B0-8837709AF2B2]]></uid>
         </SQLField>
         <SQLField>
-            <name><![CDATA[potential_date_id]]></name>
-            <type><![CDATA[BIGINT]]></type>
+            <name><![CDATA[event_date_id]]></name>
+            <type><![CDATA[UUID]]></type>
             <referencesField>id</referencesField>
             <referencesTable>EventDate</referencesTable>
             <referencesField><![CDATA[id]]></referencesField>
