@@ -2,6 +2,7 @@ require "securerandom"
 
 class Event < ApplicationRecord
   has_many :event_dates
+  has_many :respondents
 
   validates :manage_token, uniqueness: true
 
