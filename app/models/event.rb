@@ -1,6 +1,8 @@
 require "securerandom"
 
 class Event < ApplicationRecord
+  has_many :event_dates
+
   validates :manage_token, uniqueness: true
 
   before_validation :populate_manage_token
