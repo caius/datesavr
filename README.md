@@ -1,24 +1,9 @@
-# README
+# Datesavr
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Datesavr is an application to allow people to select the best date for an event to take place, based on the responses from other people.
 
-Things you may want to cover:
+Anyone can file a response to an event. The manage page is available to anyone that has the manage url. Responses can be deleted from the manage page, as well as options being added/removed from the event.
 
-* Ruby version
+## Setup
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run `bin/setup` to setup your development environment. You'll require `asdf` and the correct version of `ruby` to be installed first.
