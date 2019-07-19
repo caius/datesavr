@@ -6,5 +6,7 @@ class CreatePotentialEvents < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
+
+    add_index :potential_events, :manage_token, unique: true
   end
 end

@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2019_07_19_065455) do
     t.string "manage_token"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["manage_token"], name: "index_potential_events_on_manage_token", unique: true
   end
 
 end
