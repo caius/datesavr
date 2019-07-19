@@ -1,6 +1,6 @@
 require "securerandom"
 
-class PotentialEvent < ApplicationRecord
+class Event < ApplicationRecord
   validates :manage_token, uniqueness: true
 
   before_validation :populate_manage_token

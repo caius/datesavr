@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe PotentialEvent do
+RSpec.describe Event do
 
   context "#manage_token" do
     it "is generated if blank" do
