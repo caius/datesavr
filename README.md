@@ -7,3 +7,7 @@ Anyone can file a response to an event. The manage page is available to anyone t
 ## Setup
 
 Run `bin/setup` to setup your development environment. You'll require `asdf` and the correct version of `ruby` to be installed first.
+
+## License
+
+Anything not falling under another license in the nested directory, or header of file, falls under the Apache 2 license. See `./LICENSE` for details.
